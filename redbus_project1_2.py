@@ -402,7 +402,6 @@ class BusBookingApp:
         self.cursor.execute(query, (rating[0], rating[1], fare[0], fare[1], bus_type, from_route, to_route))
         data = self.cursor.fetchall()
 
-        # Create DataFrame
         self.df = pd.DataFrame(data, columns=[
             "ID", "Route Name", "Route Link", "Bus Name", "Bus Type", "Departure Time", 
             "Boarding Point", "Duration", "Arrival Time", "Dropping Point", "Rating", 
@@ -435,7 +434,7 @@ class BusBookingApp:
     def booking_data(self):
         """Display the filtered DataFrame and booking options."""
         self.df["Departure → Arrival"] = self.df["Boarding Point"] + " → " + self.df["Dropping Point"]
-        filtered_df = self.df[[  # Rearrange columns
+        filtered_df = self.df[[
             "ID", "Route Name", "Departure → Arrival", "Bus Name", "Bus Type", "Departure Time",
             "Duration", "Arrival Time", "Rating", "Fare", "Seats Available"
         ]]
