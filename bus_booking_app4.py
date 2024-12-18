@@ -184,7 +184,21 @@ class BusBookingApp:
     def run(self): # Run bus_booking applications
         """Run the Streamlit app."""
         self.hide_elements()
+
+        col1, col2, col3 = st.columns([1, 2, 1])
+
+        with col1: # 
+            st.image("Busly.png", caption="", width=150)  
     
+        with col2: #
+            st.markdown('<center><h1>Busly</h1></center>',True)
+            st.markdown('<center><h6><em>‘Every Route. Every Stop. One App.’</em></h6></center>',True)
+
+        with col3: # n
+            pass  
+
+        st.markdown('---')
+
         from_route, to_route, bus_type, rating, fare = self.render_sidebar()
         self.fetch_filters(rating, fare, bus_type, from_route, to_route)
        
@@ -200,7 +214,7 @@ class BusBookingApp:
                 st.markdown( # Select Criteria to alin center
                     """
                         <center>
-                            <h3>Select Criteria       </h3>
+                            <h5>Select Criteria</h5>
                         </center>
                     """, True
                 )
