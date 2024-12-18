@@ -1,0 +1,577 @@
+From https://www.redbus.in/online-booking/apsrtc/?utm_source=rtchometile Page 1: Total routes found 10
+From https://www.redbus.in/online-booking/apsrtc/?utm_source=rtchometile Page 2: Total routes found 10
+From https://www.redbus.in/online-booking/apsrtc/?utm_source=rtchometile Page 3: Total routes found 10
+From https://www.redbus.in/online-booking/apsrtc/?utm_source=rtchometile Page 4: Total routes found 10
+From https://www.redbus.in/online-booking/apsrtc/?utm_source=rtchometile Page 5: Total routes found 10
+------------------------------------------------------------------------------------------------------------ 50
+From https://www.redbus.in/online-booking/tsrtc/?utm_source=rtchometile Page 1: Total routes found 10
+From https://www.redbus.in/online-booking/tsrtc/?utm_source=rtchometile Page 2: Total routes found 10
+From https://www.redbus.in/online-booking/tsrtc/?utm_source=rtchometile Page 3: Total routes found 10
+From https://www.redbus.in/online-booking/tsrtc/?utm_source=rtchometile Page 4: Total routes found 5
+No more pages or an error occurred: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF654E26CC5+28821]
+	(No symbol) [0x00007FF654D93850]
+	(No symbol) [0x00007FF654C3578A]
+	(No symbol) [0x00007FF654C891BE]
+	(No symbol) [0x00007FF654C894AC]
+	(No symbol) [0x00007FF654CD2647]
+	(No symbol) [0x00007FF654CAF33F]
+	(No symbol) [0x00007FF654CCF412]
+	(No symbol) [0x00007FF654CAF0A3]
+	(No symbol) [0x00007FF654C7A778]
+	(No symbol) [0x00007FF654C7B8E1]
+	GetHandleVerifier [0x00007FF65515FCCD+3408029]
+	GetHandleVerifier [0x00007FF65517743F+3504143]
+	GetHandleVerifier [0x00007FF65516B61D+3455469]
+	GetHandleVerifier [0x00007FF654EEBDCB+835995]
+	(No symbol) [0x00007FF654D9EB6F]
+	(No symbol) [0x00007FF654D9A824]
+	(No symbol) [0x00007FF654D9A9BD]
+	(No symbol) [0x00007FF654D8A1A9]
+	BaseThreadInitThunk [0x00007FF9F1DCE8D7+23]
+	RtlUserThreadStart [0x00007FF9F3ABFBCC+44]
+------------------------------------------------------------------------------------------------------------ 35
+From https://www.redbus.in/online-booking/rsrtc/?utm_source=rtchometile Page 1: Total routes found 10
+From https://www.redbus.in/online-booking/rsrtc/?utm_source=rtchometile Page 2: Total routes found 10
+From https://www.redbus.in/online-booking/rsrtc/?utm_source=rtchometile Page 3: Total routes found 10
+No more pages or an error occurred: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF654E26CC5+28821]
+	(No symbol) [0x00007FF654D93850]
+	(No symbol) [0x00007FF654C3578A]
+	(No symbol) [0x00007FF654C891BE]
+	(No symbol) [0x00007FF654C894AC]
+	(No symbol) [0x00007FF654CD2647]
+	(No symbol) [0x00007FF654CAF33F]
+	(No symbol) [0x00007FF654CCF412]
+	(No symbol) [0x00007FF654CAF0A3]
+	(No symbol) [0x00007FF654C7A778]
+	(No symbol) [0x00007FF654C7B8E1]
+	GetHandleVerifier [0x00007FF65515FCCD+3408029]
+	GetHandleVerifier [0x00007FF65517743F+3504143]
+	GetHandleVerifier [0x00007FF65516B61D+3455469]
+	GetHandleVerifier [0x00007FF654EEBDCB+835995]
+	(No symbol) [0x00007FF654D9EB6F]
+	(No symbol) [0x00007FF654D9A824]
+	(No symbol) [0x00007FF654D9A9BD]
+	(No symbol) [0x00007FF654D8A1A9]
+	BaseThreadInitThunk [0x00007FF9F1DCE8D7+23]
+	RtlUserThreadStart [0x00007FF9F3ABFBCC+44]
+------------------------------------------------------------------------------------------------------------ 30
+From https://www.redbus.in/online-booking/west-bengal-transport-corporation?utm_source=rtchometile Page 1: Total routes found 4
+No more pages or an error occurred: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF654E26CC5+28821]
+	(No symbol) [0x00007FF654D93850]
+	(No symbol) [0x00007FF654C3578A]
+	(No symbol) [0x00007FF654C891BE]
+	(No symbol) [0x00007FF654C894AC]
+	(No symbol) [0x00007FF654CD2647]
+	(No symbol) [0x00007FF654CAF33F]
+	(No symbol) [0x00007FF654CCF412]
+	(No symbol) [0x00007FF654CAF0A3]
+	(No symbol) [0x00007FF654C7A778]
+	(No symbol) [0x00007FF654C7B8E1]
+	GetHandleVerifier [0x00007FF65515FCCD+3408029]
+	GetHandleVerifier [0x00007FF65517743F+3504143]
+	GetHandleVerifier [0x00007FF65516B61D+3455469]
+	GetHandleVerifier [0x00007FF654EEBDCB+835995]
+	(No symbol) [0x00007FF654D9EB6F]
+	(No symbol) [0x00007FF654D9A824]
+	(No symbol) [0x00007FF654D9A9BD]
+	(No symbol) [0x00007FF654D8A1A9]
+	BaseThreadInitThunk [0x00007FF9F1DCE8D7+23]
+	RtlUserThreadStart [0x00007FF9F3ABFBCC+44]
+------------------------------------------------------------------------------------------------------------ 4
+From https://www.redbus.in/travels/nbstc Page 1: Total routes found 10
+From https://www.redbus.in/travels/nbstc Page 2: Total routes found 10
+From https://www.redbus.in/travels/nbstc Page 3: Total routes found 10
+From https://www.redbus.in/travels/nbstc Page 4: Total routes found 10
+From https://www.redbus.in/travels/nbstc Page 5: Total routes found 10
+------------------------------------------------------------------------------------------------------------ 50
+From https://www.redbus.in/online-booking/south-bengal-state-transport-corporation-sbstc Page 1: Total routes found 10
+From https://www.redbus.in/online-booking/south-bengal-state-transport-corporation-sbstc Page 2: Total routes found 10
+From https://www.redbus.in/online-booking/south-bengal-state-transport-corporation-sbstc Page 3: Total routes found 10
+From https://www.redbus.in/online-booking/south-bengal-state-transport-corporation-sbstc Page 4: Total routes found 10
+From https://www.redbus.in/online-booking/south-bengal-state-transport-corporation-sbstc Page 5: Total routes found 10
+No more pages or an error occurred: Message: 
+------------------------------------------------------------------------------------------------------------ 50
+From https://www.redbus.in/online-booking/uttar-pradesh-state-road-transport-corporation-upsrtc Page 1: Total routes found 10
+From https://www.redbus.in/online-booking/uttar-pradesh-state-road-transport-corporation-upsrtc Page 2: Total routes found 10
+From https://www.redbus.in/online-booking/uttar-pradesh-state-road-transport-corporation-upsrtc Page 3: Total routes found 10
+From https://www.redbus.in/online-booking/uttar-pradesh-state-road-transport-corporation-upsrtc Page 4: Total routes found 10
+From https://www.redbus.in/online-booking/uttar-pradesh-state-road-transport-corporation-upsrtc Page 5: Total routes found 10
+------------------------------------------------------------------------------------------------------------ 50
+From https://www.redbus.in/online-booking/astc Page 1: Total routes found 10
+From https://www.redbus.in/online-booking/astc Page 2: Total routes found 10
+From https://www.redbus.in/online-booking/astc Page 3: Total routes found 10
+From https://www.redbus.in/online-booking/astc Page 4: Total routes found 10
+From https://www.redbus.in/online-booking/astc Page 5: Total routes found 10
+------------------------------------------------------------------------------------------------------------ 50
+--------------------------------------------------------------------------------------------------------------------------  (In hear ---- 319)
+--------------------------------------------------------------------------------------------------------------------------  (Bus Data --- 346) 
+-------------------------------------------------------------------------------------------------------------------- Cleaned Bus Data --- 257
+
+Scraping route: Hyderabad to Vijayawada Bus, Total Buses: 556 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/hyderabad-to-vijayawada: 556
+Scraping route: Hyderabad to Ongole Bus, Total Buses: 170 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/hyderabad-to-ongole: 15
+Scraping route: Ongole to Hyderabad Bus, Total Buses: 134 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/ongole-to-hyderabad: 134
+Scraping route: Bangalore to Tirupati Bus, Total Buses: 243 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/bangalore-to-tirupathi: 243
+Scraping route: Chittoor (Andhra Pradesh) to Bangalore Bus, Total Buses: 34 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/chittoor-andhra-pradesh-to-bangalore: 34
+Scraping route: Bangalore to Kadapa Bus, Total Buses: 65 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/bangalore-to-kadapa: 65
+Scraping route: Hyderabad to Narasaraopet Bus, Total Buses: 51 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/hyderabad-to-narsaraopet: 51
+Scraping route: Narasaraopet to Hyderabad Bus, Total Buses: 49 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/narsaraopet-to-hyderabad: 49
+Scraping route: Kadapa to Bangalore Bus, Total Buses: 73 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/kadapa-to-bangalore: 73
+Scraping route: Visakhapatnam to Kakinada Bus, Total Buses: 61 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/visakhapatnam-to-kakinada: 61
+Scraping route: Bangalore to Chittoor (Andhra Pradesh) Bus, Total Buses: 99 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/bangalore-to-chittoor-andhra-pradesh: 99
+Scraping route: Bangalore to Anantapur (andhra pradesh) Bus, Total Buses: 174 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/bangalore-to-ananthapur: 174
+Scraping route: Tirupati to Bangalore Bus, Total Buses: 111 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/tirupathi-to-bangalore: 111
+Scraping route: Vinukonda to Hyderabad Bus, Total Buses: 41 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/vinukonda-to-hyderabad: 41
+Scraping route: Madanapalli to Bangalore Bus, Total Buses: 3 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/madanapalli-to-bangalore: 3
+Scraping route: Anantapur (andhra pradesh) to Bangalore Bus, Total Buses: 61 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/ananthapur-to-bangalore: 61
+Scraping route: Bangalore to Madanapalli Bus, Total Buses: 15 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/bangalore-to-madanapalli: 15
+Scraping route: Hyderabad to Vinukonda Bus, Total Buses: 47 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/hyderabad-to-vinukonda: 47
+Scraping route: Eluru to Hyderabad Bus, Total Buses: 177 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/eluru-to-hyderabad: 177
+Scraping route: Hyderabad to Eluru Bus, Total Buses: 247 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/hyderabad-to-eluru: 247
+Scraping route: Guntur (Andhra Pradesh) to Hyderabad Bus, Total Buses: 76 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/guntur-to-hyderabad: 76
+Scraping route: Macherla (andhra pradesh) to Hyderabad Bus, Total Buses: 20 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/macherla-to-hyderabad: 12
+Scraping route: Hyderabad to Guntur (Andhra Pradesh) Bus, Total Buses: 73 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/hyderabad-to-guntur: 73
+Scraping route: Kadiri to Bangalore Bus, Total Buses: 24 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/kadiri-to-bangalore: 24
+Scraping route: Hyderabad to Kurnool Bus, Total Buses: 297 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/hyderabad-to-kurnool: 259
+Scraping route: Hyderabad to Macherla (andhra pradesh) Bus, Total Buses: 20 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/hyderabad-to-macherla: 12
+Scraping route: Bangalore to Rayachoti Bus, Total Buses: 52 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/bangalore-to-rayachoti: 10
+Scraping route: Hyderabad to Markapuram Bus, Total Buses: 34 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/hyderabad-to-markapuram: 15
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/nandyala-to-hyderabad: 5
+Scraping route: Hyderabad to Chilakaluripet Bus, Total Buses: 51 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/hyderabad-to-chilakaluripet: 51
+Scraping route: Chennai to Tirupati Bus, Total Buses: 41 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/chennai-to-tirupathi: 41
+Scraping route: Hyderabad to Addanki Bus, Total Buses: 124 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/hyderabad-to-addanki: 101
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/hyderabad-to-rajahmundry: 172
+Scraping route: Hyderabad to Srisailam Bus, Total Buses: 22 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/hyderabad-to-srisailam: 22
+Scraping route: Khammam to Hyderabad Bus, Total Buses: 74 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/khammam-to-hyderabad: 28
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/hyderabad-to-khammam: 56
+Scraping route: Karimnagar to Hyderabad Bus, Total Buses: 43 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/karimnagar-to-hyderabad: 43
+Scraping route: Hyderabad to Mancherial Bus, Total Buses: 35 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/hyderabad-to-mancherial: 35
+Scraping route: Hyderabad to Adilabad Bus, Total Buses: 60 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/hyderabad-to-adilabad: 60
+Scraping route: Hyderabad to Karimnagar Bus, Total Buses: 41 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/hyderabad-to-karimnagar: 41
+Scraping route: Hyderabad to Sathupally Bus, Total Buses: 56 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/hyderabad-to-sathupalli: 42
+Scraping route: Kothagudem to Hyderabad Bus, Total Buses: 44 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/kothagudem-to-hyderabad: 44
+Scraping route: Hyderabad to Nirmal Bus, Total Buses: 55 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/hyderabad-to-nirmal: 55
+Scraping route: Godavarikhani to Hyderabad Bus, Total Buses: 19 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/godavarikhani-to-hyderabad: 19
+Scraping route: Hyderabad to Anantapur (andhra pradesh) Bus, Total Buses: 205 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/hyderabad-to-ananthapur: 185
+Scraping route: Hyderabad to Tirupati Bus, Total Buses: 83 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/hyderabad-to-tirupathi: 83
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/hyderabad-to-kothagudem: 0
+Scraping route: Hyderabad to Visakhapatnam Bus, Total Buses: 111 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/hyderabad-to-visakhapatnam: 111
+Scraping route: Jagityal to Hyderabad Bus, Total Buses: 20 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/jagityal-to-hyderabad: 20
+Scraping route: Hyderabad to Bhadrachalam Bus, Total Buses: 36 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/hyderabad-to-bhadrachalam: 36
+Scraping route: Hyderabad to Warangal Bus, Total Buses: 10 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/hyderabad-to-warangal: 10
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/hyderabad-to-godavarikhani: 0
+Scraping route: Kodad to Hyderabad Bus, Total Buses: 38 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/kodad-to-hyderabad: 38
+Scraping route: Bangalore to Kozhikode Bus, Total Buses: 33 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/bangalore-to-kozhikode: 33
+Scraping route: Kozhikode to Ernakulam Bus, Total Buses: 56 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/kozhikode-to-ernakulam: 56
+Scraping route: Kozhikode to Bangalore Bus, Total Buses: 39 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/kozhikode-to-bangalore: 39
+Scraping route: Ernakulam to Kozhikode Bus, Total Buses: 65 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/ernakulam-to-kozhikode: 65
+Scraping route: Mysore to Kozhikode Bus, Total Buses: 22 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/mysore-to-kozhikode: 22
+Scraping route: Bangalore to Kannur (Kerala) Bus, Total Buses: 23 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/bangalore-to-kannur: 23
+Scraping route: Kozhikode to Mysore Bus, Total Buses: 38 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/kozhikode-to-mysore: 38
+Scraping route: Bangalore to Kalpetta (kerala) Bus, Total Buses: 28 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/bangalore-to-kalpetta: 28
+Scraping route: Kozhikode to Thrissur Bus, Total Buses: 73 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/kozhikode-to-thrissur: 73
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/kalpetta-to-bangalore: 0
+Scraping route: Kozhikode to Thiruvananthapuram Bus, Total Buses: 34 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/kozhikode-to-thiruvananthapuram: 34
+Scraping route: Kannur (Kerala) to Bangalore Bus, Total Buses: 30 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/kannur-to-bangalore: 30
+Scraping route: Thiruvananthapuram to Kozhikode Bus, Total Buses: 39 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/thiruvananthapuram-to-kozhikode: 39
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/thrissur-to-kozhikode: 28
+Scraping route: Kozhikode to Kottayam Bus, Total Buses: 24 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/kozhikode-to-kottayam: 24
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/kottayam-to-kozhikode: 9
+Scraping route: Jodhpur to Ajmer Bus, Total Buses: 79 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/jodhpur-to-ajmer: 79
+Scraping route: Jaipur to Jodhpur Bus, Total Buses: 41 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/jaipur-to-jodhpur: 41
+Scraping route: Udaipur to Jodhpur Bus, Total Buses: 31 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/udaipur-to-jodhpur: 31
+Scraping route: Beawar (Rajasthan) to Jaipur Bus, Total Buses: 96 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/beawer-to-jaipur: 96
+Scraping route: Sikar to Jaipur Bus, Total Buses: 108 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/sikar-to-jaipur: 108
+Scraping route: Aligarh to Jaipur Bus, Total Buses: 9 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/aligarh-uttar-pradesh-to-jaipur: 9
+Scraping route: Kishangarh (Rajasthan) to Jaipur Bus, Total Buses: 91 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/kishangarh-to-jaipur: 91
+Scraping route: Jaipur to Aligarh Bus, Total Buses: 14 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/jaipur-to-aligarh-uttar-pradesh: 14
+Scraping route: Jodhpur to Beawar (Rajasthan) Bus, Total Buses: 91 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/jodhpur-to-beawer: 91
+Scraping route: Kota(Rajasthan) to Jaipur Bus, Total Buses: 40 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/kota-rajasthan-to-jaipur: 40
+Scraping route: Jaipur to Pilani Bus, Total Buses: 30 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/jaipur-to-pilani: 30
+Scraping route: Udaipur to Pali (Rajasthan) Bus, Total Buses: 32 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/udaipur-to-pali-rajasthan: 32
+Scraping route: Jaipur to Kota(Rajasthan) Bus, Total Buses: 65 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/jaipur-to-kota-rajasthan: 65
+Scraping route: Kota(Rajasthan) to Udaipur Bus, Total Buses: 18 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/kota-rajasthan-to-udaipur: 18
+Scraping route: Pali (Rajasthan) to Udaipur Bus, Total Buses: 34 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/pali-to-udaipur: 10
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/udaipur-to-jaipur: 0
+Scraping route: Bikaner to Sikar Bus, Total Buses: 42 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/bikaner-to-sikar: 10
+Scraping route: Kolkata to Digha Bus, Total Buses: 99 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/kolkata-to-digha: 7
+Scraping route: Mandarmani to Kolkata Bus, Total Buses: 83 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/mandarmani-to-kolkata: 5
+Scraping route: Kolkata to Siliguri Bus, Total Buses: 27 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/kolkata-to-siliguri: 5
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/siliguri-to-darjeeling: 0
+Scraping route: Kolkata to Malda Bus, Total Buses: 39 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/kolkata-to-malda: 8
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/malda-to-kolkata: 5
+Scraping route: Kolkata to Balurghat Bus, Total Buses: 8 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/kolkata-to-balurghat: 5
+Scraping route: Berhampore to Siliguri Bus, Total Buses: 13 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/berhampore-to-siliguri: 5
+Scraping route: Balurghat to Kolkata Bus, Total Buses: 10 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/balurghat-to-kolkata: 5
+Scraping route: Cooch Behar (West Bengal) to Malda Bus, Total Buses: 3 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/cooch-behar-west-bengal-to-malda: 3
+Scraping route: Siliguri to Balurghat Bus, Total Buses: 4 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/siliguri-to-balurghat: 4
+Scraping route: Siliguri to Krishnanagar (West Bengal) Bus, Total Buses: 18 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/siliguri-to-krishnanagar: 5
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/siliguri-to-kalimpong: 0
+Scraping route: Siliguri to Berhampore Bus, Total Buses: 25 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/siliguri-to-berhampore: 25
+Scraping route: Cooch Behar (West Bengal) to Raiganj Bus, Total Buses: 1 Bus
+Total bus containers found for https://www.redbus.in/bus-tickets/cooch-behar-west-bengal-to-raiganj: 1
+Scraping route: Kolkata to Gazole Bus, Total Buses: 10 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/kolkata-to-gazole: 10
+Scraping route: Raiganj to Krishnanagar (West Bengal) Bus, Total Buses: 6 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/raiganj-to-krishnanagar: 6
+Scraping route: Gangarampur to Kolkata Bus, Total Buses: 11 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/gangarampur-to-kolkata: 11
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/malda-to-siliguri: 5
+Scraping route: Kolkata to Farakka Bus, Total Buses: 12 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/kolkata-to-farakka: 12
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/berhampore-to-falakata: 0
+Scraping route: Siliguri to Cooch Behar (West Bengal) Bus, Total Buses: 1 Bus
+Total bus containers found for https://www.redbus.in/bus-tickets/siliguri-to-cooch-behar-west-bengal: 1
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/kolkata-to-dhupguri-west-bengal: 0
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/siliguri-to-ranaghat: 8
+Scraping route: Kolkata to Buniadpur Bus, Total Buses: 5 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/kolkata-to-buniadpur: 5
+Scraping route: Kolkata to Itahar (West Bengal) Bus, Total Buses: 4 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/kolkata-to-itahar-west-bengal: 4
+Scraping route: Siliguri to Barasat (West Bengal) Bus, Total Buses: 3 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/siliguri-to-barasat-west-bengal: 3
+Scraping route: Siliguri to Raiganj Bus, Total Buses: 12 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/siliguri-to-raiganj: 12
+Scraping route: Gazole to Kolkata Bus, Total Buses: 14 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/gazole-to-kolkata: 14
+Scraping route: Durgapur (West Bengal) to Kolkata Bus, Total Buses: 50 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/durgapur-to-kolkata: 50
+Scraping route: Kolkata to Burdwan Bus, Total Buses: 61 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/kolkata-to-burdwan: 61
+Scraping route: Kolkata to Durgapur (West Bengal) Bus, Total Buses: 58 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/kolkata-to-durgapur: 58
+Scraping route: Haldia to Kolkata Bus, Total Buses: 8 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/haldia-to-kolkata: 8
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/kolkata-to-haldia: 0
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/midnapore-to-kolkata: 0
+Scraping route: Kolkata to Arambagh (West Bengal) Bus, Total Buses: 4 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/kolkata-to-arambagh-west-bengal: 4
+Scraping route: Kolkata to Midnapore Bus, Total Buses: 7 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/kolkata-to-midnapore: 7
+Scraping route: Kolkata to Asansol (West Bengal) Bus, Total Buses: 49 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/kolkata-to-asansol: 49
+Scraping route: Kolkata to Bankura Bus, Total Buses: 7 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/kolkata-to-bankura: 7
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/jhargram-to-kolkata: 0
+Scraping route: Kolkata to Nimtouri Bus, Total Buses: 8 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/kolkata-to-nimtouri: 8
+Scraping route: Kolkata to Contai (Kanthi) Bus, Total Buses: 34 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/kolkata-to-contai-kanthi: 34
+Scraping route: Digha to Durgapur (West Bengal) Bus, Total Buses: 2 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/digha-to-durgapur: 2
+Scraping route: Kolkata to Kolaghat Bus, Total Buses: 12 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/kolkata-to-kolaghat: 12
+Scraping route: Kolkata to Nandakumar (west bengal) Bus, Total Buses: 17 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/kolkata-to-nandakumar: 17
+Scraping route: Durgapur (West Bengal) to Digha Bus, Total Buses: 2 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/durgapur-to-digha: 2
+Scraping route: Kolkata to Mecheda (West Bengal) Bus, Total Buses: 8 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/kolkata-to-mecheda-west-bengal: 8
+Scraping route: Kolkata to Suri Bus, Total Buses: 5 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/kolkata-to-suri: 5
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/kirnahar-west-bengal-to-kolkata: 0
+Scraping route: Illambazar to Kolkata Bus, Total Buses: 2 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/illambazar-to-kolkata: 2
+Scraping route: Durgapur (West Bengal) to Barasat (West Bengal) Bus, Total Buses: 2 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/durgapur-to-barasat-west-bengal: 2
+Scraping route: Kolkata to Debra Bus, Total Buses: 10 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/kolkata-to-debra: 10
+Scraping route: Kolkata to Chandipur (West Bengal) Bus, Total Buses: 3 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/kolkata-to-chandipur-west-bengal: 3
+Scraping route: Durgapur (West Bengal) to Berhampore Bus, Total Buses: 2 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/durgapur-to-berhampore: 2
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/purulia-to-durgapur: 0
+Scraping route: Kolkata to Panskura Bus, Total Buses: 9 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/kolkata-to-panskura: 9
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/midnapore-to-barasat-west-bengal: 0
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/barasat-west-bengal-to-midnapore: 0
+Scraping route: Kolkata to Kirnahar (West Bengal) Bus, Total Buses: 3 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/kolkata-to-kirnahar-west-bengal: 3
+Scraping route: Kolkata to Purulia Bus, Total Buses: 4 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/kolkata-to-purulia: 4
+Scraping route: Digha to Barasat (West Bengal) Bus, Total Buses: 14 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/digha-to-barasat-west-bengal: 14
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/kirnahar-west-bengal-to-burdwan: 0
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/futishanko-to-kolkata: 0
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/kolkata-to-heria: 0
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/kolkata-to-jhargram: 0
+Scraping route: Bareilly (Uttar Pradesh) to Delhi Bus, Total Buses: 60 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/bareilly-to-delhi: 60
+Scraping route: Lucknow to Prayagraj(Uttar Pradesh) Bus, Total Buses: 34 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/lucknow-to-allahabad: 34
+Scraping route: Delhi to Bareilly (Uttar Pradesh) Bus, Total Buses: 75 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/delhi-to-bareilly: 75
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/aligarh-uttar-pradesh-to-delhi: 0
+Scraping route: Prayagraj(Uttar Pradesh) to Lucknow Bus, Total Buses: 32 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/allahabad-to-lucknow: 32
+Scraping route: Lucknow to Delhi Bus, Total Buses: 157 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/lucknow-to-delhi: 157
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/farrukhabad-up-to-delhi: 0
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/lucknow-to-agra: 172
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/delhi-to-aligarh-uttar-pradesh: 0
+Scraping route: Delhi to Farrukhabad (Uttar Pradesh) Bus, Total Buses: 22 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/delhi-to-farrukhabad-up: 22
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/varanasi-to-lucknow: 0
+Scraping route: Lucknow to Aligarh Bus, Total Buses: 2 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/lucknow-to-aligarh-uttar-pradesh: 2
+Scraping route: Sitapur (Uttar Pradesh) to Delhi Bus, Total Buses: 22 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/sitapur-to-delhi: 22
+Scraping route: Gorakhpur to Lucknow Bus, Total Buses: 132 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/gorakhpur-to-lucknow: 132
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/badaun-to-delhi: 10
+Scraping route: Agra to Lucknow Bus, Total Buses: 153 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/agra-to-lucknow: 153
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/lucknow-to-varanasi: 0
+Scraping route: Bareilly (Uttar Pradesh) to Lucknow Bus, Total Buses: 28 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/bareilly-to-lucknow: 28
+Scraping route: Shahjahanpur (Uttar Pradesh) to Delhi Bus, Total Buses: 20 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/shahjahanpur-to-delhi: 20
+Scraping route: Delhi to Lucknow Bus, Total Buses: 251 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/delhi-to-lucknow: 251
+Scraping route: Aligarh to Lucknow Bus, Total Buses: 5 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/aligarh-to-lucknow: 5
+Scraping route: Lucknow to Bareilly (Uttar Pradesh) Bus, Total Buses: 35 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/lucknow-to-bareilly: 35
+Scraping route: Moradabad to Delhi Bus, Total Buses: 30 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/moradabad-to-delhi: 30
+Scraping route: Lucknow to Kanpur Bus, Total Buses: 63 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/lucknow-to-kanpur: 63
+Scraping route: Varanasi to Gorakhpur Bus, Total Buses: 16 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/varanasi-to-gorakhpur: 16
+Scraping route: Kanpur to Jhansi(Uttar Pradesh) Bus, Total Buses: 25 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/kanpur-to-jhansi: 25
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/agra-to-bareilly: 0
+Scraping route: Kanpur to Bareilly (Uttar Pradesh) Bus, Total Buses: 11 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/kanpur-to-bareilly: 11
+Scraping route: Varanasi to Prayagraj(Uttar Pradesh) Bus, Total Buses: 47 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/varanasi-to-allahabad: 47
+Scraping route: Lucknow to Mathura Bus, Total Buses: 120 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/lucknow-to-mathura: 120
+Scraping route: Delhi to Sitapur (Uttar Pradesh) Bus, Total Buses: 12 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/delhi-to-sitapur: 12
+Scraping route: Prayagraj(Uttar Pradesh) to Varanasi Bus, Total Buses: 8 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/allahabad-to-varanasi: 8
+Scraping route: Delhi to Badaun Bus, Total Buses: 7 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/delhi-to-badaun: 7
+Scraping route: Bareilly (Uttar Pradesh) to Agra Bus, Total Buses: 5 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/bareilly-to-agra: 5
+Scraping route: Lucknow to Moradabad Bus, Total Buses: 17 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/lucknow-to-moradabad: 17
+Scraping route: Delhi to Moradabad Bus, Total Buses: 52 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/delhi-to-moradabad: 52
+Scraping route: Aligarh to Greater noida (uttar pradesh) Bus, Total Buses: 14 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/aligarh-to-greater-noida: 14
+Scraping route: Kanpur to Lucknow Bus, Total Buses: 50 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/kanpur-to-lucknow: 50
+Scraping route: Lucknow to Gorakhpur Bus, Total Buses: 50 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/lucknow-to-gorakhpur: 50
+Scraping route: Lucknow to Ballia (Uttar Pradesh) Bus, Total Buses: 4 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/lucknow-to-ballia: 4
+Scraping route: Tezpur to Guwahati Bus, Total Buses: 9 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/tezpur-to-guwahati: 9
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/guwahati-to-tezpur: 22
+Scraping route: Nagaon (Assam) to Guwahati Bus, Total Buses: 10 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/nagaon-to-guwahati: 10
+Scraping route: Guwahati to Nagaon (Assam) Bus, Total Buses: 4 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/guwahati-to-nagaon: 4
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/goalpara-to-guwahati: 0
+Scraping route: Jorhat to North Lakhimpur Bus, Total Buses: 1 Bus
+Total bus containers found for https://www.redbus.in/bus-tickets/jorhat-to-north-lakhimpur: 1
+Scraping route: Guwahati to Dhubri Bus, Total Buses: 2 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/guwahati-to-dhubri: 2
+Scraping route: Dhubri to Guwahati Bus, Total Buses: 2 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/dhubri-to-guwahati: 2
+Scraping route: North Lakhimpur to Sibsagar (Assam) Bus, Total Buses: 1 Bus
+Total bus containers found for https://www.redbus.in/bus-tickets/north-lakhimpur-to-sibsagar: 1
+Scraping route: North Lakhimpur to Jorhat Bus, Total Buses: 1 Bus
+Total bus containers found for https://www.redbus.in/bus-tickets/north-lakhimpur-to-jorhat: 1
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/sibsagar-to-north-lakhimpur: 0
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/dhekiajuli-to-guwahati: 0
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/jorhat-to-dibrugarh: 0
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/jorhat-to-dhemaji: 0
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/dhemaji-to-jorhat: 0
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/jorhat-to-tinsukia: 0
+Scraping route: Tezpur to Dibrugarh Bus, Total Buses: 7 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/tezpur-to-dibrugarh: 7
+Scraping route: Guwahati to Biswanath Charali Bus, Total Buses: 19 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/guwahati-to-biswanath-charali: 19
+Scraping route: North Lakhimpur to Tezpur Bus, Total Buses: 1 Bus
+Total bus containers found for https://www.redbus.in/bus-tickets/north-lakhimpur-to-tezpur: 1
+Scraping route: Biswanath Charali to Guwahati Bus, Total Buses: 5 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/biswanath-charali-to-guwahati: 5
+Scraping route: North Lakhimpur to Dibrugarh Bus, Total Buses: 1 Bus
+Total bus containers found for https://www.redbus.in/bus-tickets/north-lakhimpur-to-dibrugarh: 1
+Scraping route: Dibrugarh to Tezpur Bus, Total Buses: 8 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/dibrugarh-to-tezpur: 8
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/sibsagar-to-dhemaji: 0
+Scraping route: Tezpur to Moran Bus, Total Buses: 2 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/tezpur-to-moran: 2
+Scraping route: Tinsukia to Jorhat Bus, Total Buses: 4 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/tinsukia-to-jorhat: 4
+Scraping route: Tezpur to North Lakhimpur Bus, Total Buses: 3 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/tezpur-to-north-lakhimpur: 3
+Scraping route: Dibrugarh to Jorhat Bus, Total Buses: 7 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/dibrugarh-to-jorhat: 7
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/bihpuria-to-dibrugarh: 0
+Scraping route: Guwahati to North Lakhimpur Bus, Total Buses: 25 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/guwahati-to-north-lakhimpur: 25
+Scraping route: Guwahati to Kaliabor Bus, Total Buses: 7 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/guwahati-to-kaliabor: 7
+Scraping route: Bokakhat to Dibrugarh Bus, Total Buses: 1 Bus
+Total bus containers found for https://www.redbus.in/bus-tickets/bokakhat-to-dibrugarh: 1
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/jorhat-to-gogamukh: 0
+Scraping route: Dibrugarh to North Lakhimpur Bus, Total Buses: 5 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/dibrugarh-to-north-lakhimpur: 5
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/north-lakhimpur-to-moran: 0
+Scraping route: Guwahati to Gohpur Bus, Total Buses: 24 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/guwahati-to-gohpur: 24
+Scraping route: Nagaon (Assam) to North Lakhimpur Bus, Total Buses: 17 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/nagaon-to-north-lakhimpur: 17
+Scraping route: North Lakhimpur to Nagaon (Assam) Bus, Total Buses: 12 Buses
+Total bus containers found for https://www.redbus.in/bus-tickets/north-lakhimpur-to-nagaon: 12
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/guwahati-to-tumuki-tezpur-medical: 0
+Scraping route: Biswanath Charali to Dibrugarh Bus, Total Buses: 1 Bus
+Total bus containers found for https://www.redbus.in/bus-tickets/biswanath-charali-to-dibrugarh: 1
+Scraping route: Unknown Route, Total Buses: NA
+Total bus containers found for https://www.redbus.in/bus-tickets/moran-to-north-lakhimpur: 0

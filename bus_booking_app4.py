@@ -18,10 +18,10 @@ class BusBookingApp:
         st.markdown( #visibility : hidden
             """ 
             <style>
-                .stAppHeader.st-emotion-cache-h4xjwg.e10jh26i0 {
-                    visibility : hidden;
-                }
-                .st-bt.st-cn.st-b6.st-co.st-cp, .st-emotion-cache-gi0tri.e121c1cl3 {
+                .stAppHeader.st-emotion-cache-h4xjwg.e10jh26i0,
+                .e14lo1l1.st-emotion-cache-1b2ybts.ex0cdmw0,
+                .st-bt.st-cn.st-b6.st-co.st-cp, 
+                .st-emotion-cache-gi0tri.e121c1cl3 {
                     visibility : hidden;
                 }
             </style>
@@ -31,13 +31,13 @@ class BusBookingApp:
         """Fetch distinct values for From, To, and Bus Type dropdowns."""
        
         self.cursor.execute("SELECT DISTINCT SUBSTRING_INDEX(route_name, ' to ', 1) FROM buses")
-        from_routes = [row[0] for row in self.cursor.fetchall()]
+        from_routes = sorted([row[0] for row in self.cursor.fetchall()])
 
         self.cursor.execute("SELECT DISTINCT SUBSTRING_INDEX(route_name, ' to ', -1) FROM buses")
-        to_routes = [row[0] for row in self.cursor.fetchall()]
+        to_routes = sorted([row[0] for row in self.cursor.fetchall()])
 
         self.cursor.execute("SELECT DISTINCT bus_type FROM buses")
-        bus_types = [row[0] for row in self.cursor.fetchall()]
+        bus_types = sorted([row[0] for row in self.cursor.fetchall()])
 
         return from_routes, to_routes, bus_types
 
@@ -76,26 +76,43 @@ class BusBookingApp:
 
     def render_sidebar(self): # sidebar User Input
         """Render sidebar and get filter inputs."""
-        st.sidebar.header("Filters")
+        
         from_routes, to_routes, bus_types = self.distinct_filters()
+        from_routes = [""] + from_routes
+        to_routes = [""] + to_routes
+        bus_types = [""] + bus_types
 
-        from_route = st.sidebar.selectbox("Select Route (From)", from_routes)
-        to_route = st.sidebar.selectbox("Select Route (To)", to_routes)
-        bus_type = st.sidebar.selectbox("Select Bus Type", bus_types)
-        rating = st.sidebar.slider("Select Rating", min_value=1.0, max_value=5.0, value=(1.0, 5.0))
-        fare = st.sidebar.slider("Select Fare Range", min_value=0, max_value=10000, value=(0, 10000))
+        with st.sidebar:
+            with st.expander("Route Filters"):
+                from_route = st.selectbox("Select (From) Route", from_routes)
+                to_route = st.selectbox("Select (To) Route", to_routes)
+        
+        with st.sidebar:
+            with st.expander("Bus Filters"):
+                bus_type = st.selectbox("Select Bus Type", bus_types)
+                rating = st.slider("Select Rating", min_value=1.0, max_value=5.0, value=(1.0, 5.0))
+                fare = st.slider("Select Fare Range", min_value=0, max_value=10000, value=(0, 10000))
 
         return from_route, to_route, bus_type, rating, fare
 
     def filter_bd_point(self): # boarding & droping point filter inside page
         """Add dropdowns for Boarding Point and Dropping Point filtering."""
-        col1, col2 = st.columns([1, 1])
+        col1, col2, col3 = st.columns([1, 1, 1])
         with col1:
             boarding_point = st.selectbox("Select Boarding Point", self.df["Boarding Point"].unique())
         with col2:
             dropping_point = st.selectbox("Select Dropping Point", self.df["Dropping Point"].unique())
+        with col3:
+            departing_time = st.selectbox("Select Departure Time", 
+                                            options=[""] + list(self.df["Departure Time"].unique()),)
 
-        self.df = self.df[(self.df["Boarding Point"] == boarding_point) & (self.df["Dropping Point"] == dropping_point)]
+            if departing_time != "":
+                self.df = self.df[(self.df["Boarding Point"] == boarding_point) & 
+                                (self.df["Dropping Point"] == dropping_point) & 
+                                (self.df["Departure Time"] == departing_time)]
+            else:
+                self.df = self.df[(self.df["Boarding Point"] == boarding_point) & 
+                                (self.df["Dropping Point"] == dropping_point)]
 
     def booking_data(self): # display datas and booking
         """Display the filtered DataFrame and booking options."""
@@ -109,18 +126,18 @@ class BusBookingApp:
             st.subheader("Available Buses")
             st.dataframe(filtered_df.style.format({"Fare": "₹{:,.2f}"}), hide_index=True)
 
-            col1, col2 = st.columns([1, 1])
-            with col2:
-                available_ids = filtered_df["ID"].tolist()
+            available_ids = filtered_df["ID"].tolist()
+            st.subheader("Confirm Booking Details")
+            col1, col2, col3, col4, col5 = st.columns([1, 1, 1, 1, 1])
+            with col1:
                 selected_id = st.selectbox("Select Bus ID to Book", available_ids, key="bus_id_select")
 
-                if st.button("Confirm Booking"):
-                    self.book_bus(selected_id)
+            selected_bus = filtered_df[filtered_df['ID'] == selected_id].iloc[0]
+            self.dp_Bus_Details(selected_bus)
 
-            with col1:
-                st.subheader("Confirm Booking Details")
-                selected_bus = filtered_df[filtered_df['ID'] == selected_id].iloc[0]
-                self.dp_Bus_Details(selected_bus)
+            if st.button("Confirm Booking"):
+                self.book_bus(selected_id)
+
         else:
             st.warning("No buses available for the selected filter.")
 
@@ -158,15 +175,33 @@ class BusBookingApp:
     def run(self):
         """Run the Streamlit app."""
         self.hide_elements()
-        st.title("Bus Booking System")
+        
 
         from_route, to_route, bus_type, rating, fare = self.render_sidebar()
         self.fetch_filters(rating, fare, bus_type, from_route, to_route)
         if not self.df.empty:
+            st.title("Bus Booking System")
             self.filter_bd_point()
             self.booking_data()
         else:
-            st.warning("No buses match the selected criteria.")
+            logo = "No buses match the selected criteria."
+
+            if logo == "No buses match the selected criteria.":
+                st.markdown(
+                    """
+                        <center>
+                            <h3>Select Criteria       </h3>
+                        </center>
+                    """, True
+                )
+                col1, col2, col3 = st.columns([1, 2, 1])
+
+                with col1:
+                    pass  
+                with col2:
+                    st.image("SelecteCriteria.png", caption="No buses match the selected criteria.", width=250)
+                with col3:
+                    pass  
 
 if __name__ == "__main__":
     app = BusBookingApp()

@@ -59,11 +59,11 @@ class Data_base:  # bus details to SQL
         # Check for Non-AC variants
         if re.search(r'non[-]?ac|non[-]?a\.c\.|non[-]?a/c', bus_type_lower):
             if re.search(r'sleeper', bus_type_lower):
-                return 'Non-AC Sleeper'
+                return 'Sleeper'
             elif re.search(r'seater', bus_type_lower):
-                return 'Non-AC Seater'
+                return 'Seater'
             elif re.search(r'push back', bus_type_lower):
-                return 'Non-AC Push Back'
+                return 'Push Back'
 
         # Check for AC variants
         elif re.search(r'ac|a\.c\.|a/c', bus_type_lower):
@@ -84,7 +84,7 @@ class Data_base:  # bus details to SQL
                 return 'Push Back'
 
         # Default case if none of the patterns match
-        return 'Others'
+        return bus_type
 
     def insert_data_from_csv(self, csv_file_path):
         inserted_count = 0
