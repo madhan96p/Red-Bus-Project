@@ -24,10 +24,10 @@ def links_scraper(): # Scrape bus route links
     scraper.scrape_all()
     scraper.save_results()
 
-    df = pd.read_excel('bus_data.xlsx')
+    df = pd.read_excel('Bus_Data.xlsx')
     cleanedBD = df.drop_duplicates()
-    cleanedBD.to_excel('cleanedBD.xlsx', index=False)
-    print("Data cleaned and saved to cleanedBD.xlsx")
+    cleanedBD.to_excel('Bus_Data_Cleaned.xlsx', index=False)
+    print("Data cleaned and saved to Bus_Data_Cleaned.xlsx")
 
 def route_data_scraper(): # Scrape  route detail
     """
@@ -35,7 +35,7 @@ def route_data_scraper(): # Scrape  route detail
     """
 
     # Load route links from the saved Excel file
-    xlsx_path = 'cleanedBD.xlsx'
+    xlsx_path = 'Bus_Data_Cleaned.xlsx'
     scraped_links = pd.read_excel(xlsx_path)
     route_links = scraped_links['route_link'].tolist()
 #     route_links = ['https://www.redbus.in/bus-tickets/dergaon-to-dibrugarh',
@@ -48,7 +48,7 @@ def route_data_scraper(): # Scrape  route detail
 
 def insert_to_Sql(): # insert datas into sql
 
-    csv_file_path = 'bus_details.csv'
+    csv_file_path = 'Bus_Details.csv'
     db_handler = Data_base_handler(csv_file_path)
     db_handler.insert_data_from_csv(csv_file_path)
     db_handler.close_connection()

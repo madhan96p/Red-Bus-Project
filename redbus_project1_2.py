@@ -73,7 +73,7 @@ class Bus_links_scraper: # scraping links and route name
         # Close the browser when done
         self.driver.quit()
 
-    def save_results(self, filename='bus_data.xlsx'): # xlsx or csv
+    def save_results(self, filename='Bus_Data.xlsx'): # xlsx or csv
         """
         Save the scraped data to a CSV file or excel.
         """
@@ -91,7 +91,7 @@ class BusDetails:  # To scrape bus details
         self.chrome = webdriver.Chrome() 
         self.wait = WebDriverWait(self.chrome, 15)  
         self.route_links = route_links
-        self.bus_details = [] 
+        self.Bus_Details = [] 
 
     def scrape_route_details(self):  # Main scraping function --- scraping_log.txt
         """Scrape bus details for each route in route_links."""
@@ -112,7 +112,7 @@ class BusDetails:  # To scrape bus details
                         self._load_all_buses()
                         
                         # Extract bus details
-                        self._extract_bus_details(route_name, total_buses, link,log_file) # print(f"Total bus containers found: {len(bus_elements)}") in extract_bus_details
+                        self._extract_Bus_Details(route_name, total_buses, link,log_file) # print(f"Total bus containers found: {len(bus_elements)}") in extract_Bus_Details
 
                     except Exception as e:
                         print(f"Error scraping route: {e},")
@@ -121,7 +121,7 @@ class BusDetails:  # To scrape bus details
                     print(f"Error scraping route: {e}")
        
         self.chrome.quit()
-        return self.bus_details
+        return self.Bus_Details
 
     def _load_all_buses(self):  # Handle scrolling and view buttons
         """Click all view buttons and scroll the page to load all buses."""
@@ -168,7 +168,7 @@ class BusDetails:  # To scrape bus details
             print(f"Error extracting amenities: {e}")
             return []
 
-    def _extract_bus_details(self, route_name, total_buses, link, log_file):  # Extract bus details
+    def _extract_Bus_Details(self, route_name, total_buses, link, log_file):  # Extract bus details
         """Extract bus details from the loaded page."""
         
         try: # bus containers
@@ -198,7 +198,7 @@ class BusDetails:  # To scrape bus details
                 # amenities = self._extract_amenities(bus)
                 Link = link
                 # Append bus details to the list
-                self.bus_details.append({
+                self.Bus_Details.append({
                     "Route Name": route_name,
                     "Route Link": Link,
                     "Total Buses": total_buses,
@@ -218,11 +218,11 @@ class BusDetails:  # To scrape bus details
             except Exception as e:
                 print(f"Error extracting bus details: {e}")
 
-    def save_results(self, filename='bus_details.csv'): # xlsx or csv
+    def save_results(self, filename='Bus_Details.csv'): # xlsx or csv
         """
         Save the scraped data to a CSV file or excel.
         """
-        df = pd.DataFrame(self.bus_details)
+        df = pd.DataFrame(self.Bus_Details)
         df.to_csv(filename, index=False) # to_excel or csv
         print(f"Data saved to {filename}")
         return df
@@ -454,7 +454,7 @@ class BusBookingApp:
             with col1:
                 st.subheader("Confirm Details")
                 selected_bus = filtered_df[filtered_df['ID'] == selected_id].iloc[0]
-                self.dp_bus_details(selected_bus)
+                self.dp_Bus_Details(selected_bus)
         else:
             st.warning("No buses available for the selected filter.")
 
@@ -473,7 +473,7 @@ class BusBookingApp:
         except Exception as e:
             st.error(f"An error occurred: {e}")
 
-    def dp_bus_details(self, selected_bus):
+    def dp_Bus_Details(self, selected_bus):
         """Display the selected bus details."""
         details = {
             "Bus Name": selected_bus["Bus Name"],

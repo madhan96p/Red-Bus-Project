@@ -146,7 +146,7 @@ class Data_base:  # bus details to SQL
         except Exception as e:
             print(f"Error while closing the connection: {e}")
 
-csv_file_path = 'bus_details.csv'
+csv_file_path = 'Bus_Details.csv'
 db_handler = Data_base(csv_file_path)
 db_handler.insert_data_from_csv(csv_file_path)
 db_handler.close_connection()

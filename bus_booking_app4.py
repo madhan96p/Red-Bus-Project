@@ -120,7 +120,7 @@ class BusBookingApp:
             with col1:
                 st.subheader("Confirm Booking Details")
                 selected_bus = filtered_df[filtered_df['ID'] == selected_id].iloc[0]
-                self.dp_bus_details(selected_bus)
+                self.dp_Bus_Details(selected_bus)
         else:
             st.warning("No buses available for the selected filter.")
 
@@ -141,7 +141,7 @@ class BusBookingApp:
         except Exception as e:
             st.error(f"An error occurred: {e}")
 
-    def dp_bus_details(self, selected_bus): # displaying selected bus
+    def dp_Bus_Details(self, selected_bus): # displaying selected bus
         """Display the selected bus details."""
         details = {
             "Bus Name": selected_bus["Bus Name"],
