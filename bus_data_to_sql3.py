@@ -3,7 +3,7 @@ import csv
 import mysql.connector
 
 class Data_base:  # bus details to SQL
-    def __init__(self, csv_file_path):
+    def __init__(self, csv_file_path): # calling csv file and instalizing
         self.host = "localhost"       
         self.user = "root"           
         self.password = ""       
@@ -21,7 +21,7 @@ class Data_base:  # bus details to SQL
             self.cursor.execute(f"USE {self.database}")
             self.create_table()
        
-        except mysql.connector.Error as e:
+        except mysql.connector.Error as e: # if error while connecting
             print(f"Error: {e}")
 
     def create_table(self): # creating table
@@ -53,33 +53,42 @@ class Data_base:  # bus details to SQL
         self.cursor.execute(query, (route_link, bus_name, departing_time))
         return self.cursor.fetchone()[0] > 0
             
-    def categorize_bus_type(self, bus_type):
+    def categorize_bus_type(self, bus_type): # like label Encoding
         bus_type_lower = bus_type.lower()
 
         # Check for Non-AC variants
         if re.search(r'non[-]?ac|non[-]?a\.c\.|non[-]?a/c', bus_type_lower):
+   
             if re.search(r'sleeper', bus_type_lower):
                 return 'Sleeper'
+   
             elif re.search(r'seater', bus_type_lower):
                 return 'Seater'
+   
             elif re.search(r'push back', bus_type_lower):
                 return 'Push Back'
 
         # Check for AC variants
         elif re.search(r'ac|a\.c\.|a/c', bus_type_lower):
+    
             if re.search(r'sleeper', bus_type_lower):
                 return 'AC Sleeper'
+      
             elif re.search(r'seater', bus_type_lower):
                 return 'AC Seater'
+    
             elif re.search(r'push back', bus_type_lower):
                 return 'AC Push Back'
 
         # Check for basic types without AC specification
-        else:
+        else: # non Ac
+  
             if re.search(r'sleeper', bus_type_lower):
                 return 'Sleeper'
+ 
             elif re.search(r'seater', bus_type_lower):
                 return 'Seater'
+  
             elif re.search(r'push back', bus_type_lower):
                 return 'Push Back'
 
@@ -126,24 +135,27 @@ class Data_base:  # bus details to SQL
                             duration, reaching_time, dropping_point, star_rating, fare, seats_available
                         ))
                         inserted_count += 1  
+      
                     else:  # for duplicate rows
                         not_inserted_count += 1  
             
             self.conn.commit()
+        
             print(f"Data from {csv_file_path} has been successfully processed,\n"
                 f"{inserted_count} rows inserted into the database and\n"
                 f"{not_inserted_count} rows not inserted into the database")
 
-        except Exception as e:
+        except Exception as e: # if error during intersection
             print(f"Error during data insertion: {e}")
     
     def close_connection(self): # connection closing
+    
         try: # closing sql
             self.cursor.close()
             self.conn.close()
             print("Database connection closed.")
        
-        except Exception as e:
+        except Exception as e: # if any error while closing
             print(f"Error while closing the connection: {e}")
 
 csv_file_path = 'Bus_Details.csv'
