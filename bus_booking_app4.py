@@ -175,7 +175,7 @@ class BusBookingApp:
             "Departure Time": selected_bus["Departure Time"],
             "Arrival Time": selected_bus["Arrival Time"],
             "Duration": selected_bus["Duration"],
-            "Fare (INR)": selected_bus["Fare"],
+            "Fare (INR)": f"₹{selected_bus["Fare"]}", 
             "Seats Available": selected_bus["Seats Available"]
         }
        
