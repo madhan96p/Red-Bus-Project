@@ -1,8 +1,8 @@
-import streamlit as st
+import streamlit as st # importing modules
 import mysql.connector
 import pandas as pd
 
-class BusBookingApp: 
+class BusBookingApp: # Busly App
  
     def __init__(self): # Database Connection
         self.conn = mysql.connector.connect(
@@ -28,7 +28,7 @@ class BusBookingApp:
             </style>
         """, True)
 
-    def distinct_filters(self): # Unique values
+    def distinct_filters(self): # Unique values {Also need to add available seats}
         """Fetch distinct values for From, To, and Bus Type dropdowns."""
        
         self.cursor.execute("SELECT DISTINCT SUBSTRING_INDEX(route_name, ' to ', 1) FROM buses")
@@ -45,8 +45,9 @@ class BusBookingApp:
 
         return from_routes, to_routes, bus_types, Other_types
 
-    def fetch_filters(self, rating, fare, bus_type, Other_type, from_route, to_route):
+    def fetch_filters(self, rating, fare, bus_type, Other_type, from_route, to_route): # Fetching filtered data
         """Fetch filtered bus details based on the sidebar selections."""
+       
         query = """ 
             SELECT 
                 id, route_name, route_link, bus_name, bus_type,
@@ -67,23 +68,20 @@ class BusBookingApp:
                 SUBSTRING_INDEX(route_name, ' to ', 1) = %s AND
                 SUBSTRING_INDEX(route_name, ' to ', -1) = %s
         """
-        
         params = [rating[0], rating[1], fare[0], fare[1], from_route, to_route]
-        
-        if bus_type is not None:
+       
+        if bus_type is not None: # if selected "bus_type" query and params will be added
             query += " AND bus_type = %s"
             params.append(bus_type)
         
-        if Other_type is not None:
+        if Other_type is not None: # if selected "Others" query and params will be added
             query += " AND bus_type = %s"
             params.append(Other_type)
 
-        # Execute the query
         self.cursor.execute(query, params)
         data = self.cursor.fetchall()
 
-        # Convert results to DataFrame
-        self.df = pd.DataFrame(data, columns=[
+        self.df = pd.DataFrame(data, columns=[ # To display in df after filtering using query
             "ID", "Route Name", "Route Link", "Bus Name", "Bus Type", "Departure Time", 
             "Boarding Point", "Duration", "Arrival Time", "Dropping Point", "Rating", 
             "Fare", "Seats Available", "Departure → Arrival"
@@ -91,7 +89,7 @@ class BusBookingApp:
         self.df["Other Type"] = self.df.apply(lambda row: row["Bus Type"] if row["Bus Type"] != "Others" else "Other Type", axis=1)
 
     def render_sidebar(self): # sidebar User Input
-        """Render sidebar and get filter inputs."""
+        """Render sidebar and get filter as inputs."""
         
         from_routes, to_routes, bus_types, Other_types = self.distinct_filters()
         from_routes = [""] + from_routes
@@ -107,14 +105,15 @@ class BusBookingApp:
             with st.expander("Bus Filters"): # To filter Bus details
                 bus_type = st.selectbox("Select Bus Type", bus_types) 
                 
-                if bus_type == '':
+                if bus_type == '': # if not selected "bus_type" display all types
                     bus_type = None
 
-                if bus_type == 'Others':
+                if bus_type == 'Others': # if selected "Others" (option) will visible
                     Other_type = st.selectbox("Select Other Bus Type", Other_types)
-                    if Other_type == '':
+                    if Other_type == '': # if not selected "Others" 
                         Other_type = None
-                else:
+               
+                else: # if not selected "Others"
                     Other_type = None
                     
                 rating = st.slider("Select Rating", min_value=1.0, max_value=5.0, value=(1.0, 5.0))
@@ -124,8 +123,8 @@ class BusBookingApp:
 
     def filter_bd_point(self): # boarding & droping point filter inside page
         """Add dropdowns for Boarding Point and Dropping Point filtering."""
-        col1, col2, col3 = st.columns([1, 1, 1]) # space to occupy
-
+        
+        col1, col2, col3 = st.columns([1, 1, 1]) 
         with col1: # boarding_point filter @ 1st col
             boarding_point = st.selectbox("Select Boarding Point", options=[""] + list(self.df["Boarding Point"].unique()))
        
@@ -147,68 +146,58 @@ class BusBookingApp:
         else: # All filters selected
             filtered_df = self.df[ (self.df["Boarding Point"] == boarding_point) & (self.df["Dropping Point"] == dropping_point) & (self.df["Departure Time"] == departing_time)]
 
-        # Display filtered data
-        self.df = filtered_df
+        self.df = filtered_df # Display filtered data
 
-
-    def booking_data(self):
+    def booking_data(self):# Booking data
         """Display the filtered DataFrame and booking options."""
-        # Create "Departure → Arrival" column
         self.df["Departure → Arrival"] = self.df["Boarding Point"] + " → " + self.df["Dropping Point"]
-
-        # Filter the DataFrame to display relevant columns
-        filtered_df = self.df[
-            [
-                "ID", "Route Name", "Departure → Arrival", "Bus Name", "Bus Type","Other Type",
-                "Departure Time", "Duration", "Arrival Time", "Rating", "Fare", "Seats Available"
+        filtered_df = self.df[ # Filter the df to display relevant columns
+            ["ID", "Route Name", "Departure → Arrival", "Bus Name", "Bus Type","Other Type",
+                "Departure Time", "Duration", "Arrival Time", "Rating", "Fare", "Seats Available"]
             ]
-        ]
 
-        if not filtered_df.empty:
+        if not filtered_df.empty: # Check if any buses match the selected criteria
             st.subheader("Available Buses")
             columns_to_remove = ["Other Type", "Route Name"] 
             filtered_df = filtered_df.drop(columns=columns_to_remove)
             st.dataframe(filtered_df.style.format({"Fare": "₹{:,.2f}","Rating": "{:,.1f}"}), hide_index=True)
             st.markdown('---')
 
-            # Check if "Book Now" button is clicked
-            if "show_booking_details" not in st.session_state:
+            if "show_booking_details" not in st.session_state: # To show booking details Available or not
                 st.session_state.show_booking_details = False
 
-            if st.button("Book Now"):
+            if st.button("Book Now"): # To Book Now
                 st.session_state.show_booking_details = True
 
-            # Show additional options after "Book Now" is clicked
-            if st.session_state.show_booking_details:
+            if st.session_state.show_booking_details: # To display booking details
                 available_ids = filtered_df["ID"].tolist()
 
                 col1, col3 = st.columns([2, 5])
-
-                with col1:
-                    # Selecting "ID"
+                with col1: # Selecting "ID"
                     selected_id = st.selectbox("Select Bus ID to Book", available_ids, key="bus_id_select")
 
-                with col3:
-                    # Display booking details
+                with col3: # Display booking details
                     st.subheader("Confirm Booking Details")
                     selected_bus_df = filtered_df[filtered_df['ID'] == selected_id]
-                    if not selected_bus_df.empty:
-                        # Check if seats are available
+                
+                    if not selected_bus_df.empty:# Check if seats are available                      
                         selected_bus = selected_bus_df.iloc[0]
-                        if selected_bus["Seats Available"] > 0:
+                
+                        if selected_bus["Seats Available"] > 0: # If seats are available
                             self.dp_Bus_Details(selected_bus)
 
-                            # Confirm Booking
-                            if st.button("Confirm Booking"):
+                            if st.button("Confirm Booking"):# Confirm Booking
                                 self.book_bus(selected_id)
                                 st.success("Your booking is confirmed!")
-                        else:
+                      
+                        else: # if selected bus is fully booked
                             st.error("Sorry, this bus is fully booked. Please select another bus.")
-                    else:
+                   
+                    else: # if not selected any bus
                         st.error("Please try again.")
                 st.markdown('---')
 
-        else:
+        else: # if no buses match the selected criteria
             st.warning("No buses match your selected route and timing preferences. Please try adjusting your filters.")
 
     def book_bus(self, bus_id): # BOok Bus by choosing bus id
@@ -287,6 +276,6 @@ class BusBookingApp:
                 with col3: # MT column
                     pass  
 
-if __name__ == "__main__": # To run booking app
+if __name__ == "__main__": # To run Busly Booking app
     app = BusBookingApp()
     app.run()
