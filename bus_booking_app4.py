@@ -14,19 +14,19 @@ class BusBookingApp:
         self.cursor = self.conn.cursor()
         self.df = None
 
-    def hide_elements(self): # <`s hidding
+    # def hide_elements(self): # <`s hidding
     
-        st.markdown( # hidding Unessary "><"
-            """ 
-            <style>
-                .stAppHeader.st-emotion-cache-h4xjwg.e10jh26i0,
-                .e14lo1l1.st-emotion-cache-1b2ybts.ex0cdmw0,
-                .st-bt.st-cn.st-b6.st-co.st-cp, 
-                .st-emotion-cache-gi0tri.e121c1cl3 {
-                    visibility : hidden;
-                }
-            </style>
-        """, True)
+    #     st.markdown( # hidding Unessary "><"
+    #         """ 
+    #         <style>
+    #             .stAppHeader.st-emotion-cache-h4xjwg.e10jh26i0,
+    #             .e14lo1l1.st-emotion-cache-1b2ybts.ex0cdmw0,
+    #             .st-bt.st-cn.st-b6.st-co.st-cp, 
+    #             .st-emotion-cache-gi0tri.e121c1cl3 {
+    #                 visibility : hidden;
+    #             }
+    #         </style>
+    #     """, True)
 
     def distinct_filters(self): # Unique values
         """Fetch distinct values for From, To, and Bus Type dropdowns."""
@@ -242,7 +242,7 @@ class BusBookingApp:
 
     def run(self): # Run bus_booking applications
         """Run the Streamlit app."""
-        self.hide_elements()
+        # self.hide_elements()
 
         col1, col2, col3 = st.columns([1, 2, 1])
 
