@@ -68,12 +68,15 @@ class BusBookingApp:
                 SUBSTRING_INDEX(route_name, ' to ', -1) = %s
         """
         
-        if bus_type == "Others":# Add bus type filtering dynamically
+        params = [rating[0], rating[1], fare[0], fare[1], from_route, to_route]
+        
+        if bus_type is not None:
             query += " AND bus_type = %s"
-            params = (rating[0], rating[1], fare[0], fare[1], from_route, to_route, Other_type)
-        else:
+            params.append(bus_type)
+        
+        if Other_type is not None:
             query += " AND bus_type = %s"
-            params = (rating[0], rating[1], fare[0], fare[1], from_route, to_route, bus_type)
+            params.append(Other_type)
 
         # Execute the query
         self.cursor.execute(query, params)
@@ -109,8 +112,11 @@ class BusBookingApp:
 
                 if bus_type == 'Others':
                     Other_type = st.selectbox("Select Other Bus Type", Other_types)
+                    if Other_type == '':
+                        Other_type = None
                 else:
                     Other_type = None
+                    
                 rating = st.slider("Select Rating", min_value=1.0, max_value=5.0, value=(1.0, 5.0))
                 fare = st.slider("Select Fare Range", min_value=0, max_value=10000, value=(0, 10000))
         
@@ -132,8 +138,8 @@ class BusBookingApp:
         if boarding_point == "" and dropping_point == "" and departing_time == "":# No filters selected, show all routes
             filtered_df = self.df
         
-        elif boarding_point == "" and dropping_point == "":# Only Departure Time selected
-            filtered_df = self.df[self.df["Departure Time"] == departing_time]
+        elif dropping_point == "" and departing_time == "":# Only boarding point selected
+            filtered_df = self.df[self.df["Boarding Point"] == boarding_point]
 
         elif departing_time == "":# Only Boarding and Dropping Points selected
             filtered_df = self.df[(self.df["Boarding Point"] == boarding_point) & (self.df["Dropping Point"] == dropping_point)]
@@ -266,17 +272,17 @@ class BusBookingApp:
             self.booking_data()
      
         else: # if anything miss match
-            logo = "No buses match the selected criteria."
-            if logo == "No buses match the selected criteria.": # To Show image
+            filter = "MISS MATCH"
+            if filter == "MISS MATCH": # To Show image
                 st.markdown( # Select Criteria to alin center
-                    """<center><h5>Select Criteria</h5></center>""", True)
+                    """<center><h6><em>Adjust your filters to explore available buses and find the best options for your journey.</em></h6></center>""", True)
                 col1, col2, col3 = st.columns([1, 1, 1])
 
                 with col1: # Mt column
                     pass  
           
                 with col2: # Error image column
-                    st.image("SelecteCriteria.png", caption="No buses match the selected criteria.", width=250)
+                    st.image("SelectCriteria.webp", caption="No buses match the selected criteria.", width=200)
             
                 with col3: # MT column
                     pass  
