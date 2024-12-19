@@ -97,24 +97,23 @@ class BusBookingApp:
         Other_types = [""] + Other_types
 
         with st.sidebar: # Nested Filter
-            with st.expander("Route Filters"): # To filter bus route if boarding_point == "" and dropping_point == "" and departing_time == "":# No filters selected, show all routes
-                                                                #     filtered_df = self.df
-                                                                
-                                                                # elif boarding_point == "" and dropping_point == "":# Only Departure Time selected
-                                                                #     filtered_df = self.df[self.df["Departure Time"] == departing_time]
+            with st.expander("Route Filters"): # To filter bus route  
                 from_route = st.selectbox("Select (From) Route", from_routes)
                 to_route = st.selectbox("Select (To) Route", to_routes)
         
-        with st.sidebar: # nested Filter 
             with st.expander("Bus Filters"): # To filter Bus details
                 bus_type = st.selectbox("Select Bus Type", bus_types) 
+                
+                if bus_type == '':
+                    bus_type = None
+
                 if bus_type == 'Others':
                     Other_type = st.selectbox("Select Other Bus Type", Other_types)
                 else:
                     Other_type = None
                 rating = st.slider("Select Rating", min_value=1.0, max_value=5.0, value=(1.0, 5.0))
                 fare = st.slider("Select Fare Range", min_value=0, max_value=10000, value=(0, 10000))
-
+        
         return from_route, to_route, bus_type, Other_type, rating, fare
 
     def filter_bd_point(self): # boarding & droping point filter inside page
