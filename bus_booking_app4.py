@@ -5,14 +5,17 @@ import pandas as pd
 class BusBookingApp: # Busly App
  
     def __init__(self): # Database Connection
-        self.conn = mysql.connector.connect(
-            host='localhost',
-            user='root',
-            password='',
-            database='bus_data'
-        )
-        self.cursor = self.conn.cursor()
-        self.df = None
+        try:
+            self.conn = mysql.connector.connect(
+                host='localhost',
+                user='root',
+                password='',
+                database='bus_data'
+            )
+            self.cursor = self.conn.cursor()
+            self.df = None
+        except mysql.connector.Error as err:
+            st.error(f"Error: {err}")
 
     def hide_elements(self): # <`s hidding
     
@@ -260,7 +263,7 @@ class BusBookingApp: # Busly App
         col1, col2, col3 = st.columns([1, 2, 1])
 
         with col1: # Logo
-            st.image("Busly.png", caption="", width=150)  
+            st.image("Busly.png", caption="", width=140)  
     
         with col2: # App name and Slogan
             st.markdown('<center><h1>Busly</h1></center>',True)
