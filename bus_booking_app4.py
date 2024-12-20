@@ -70,7 +70,7 @@ class BusBookingApp: # Busly App
         """
         params = [rating[0], rating[1], fare[0], fare[1], from_route, to_route]
        
-        if bus_type is not None: # if selected "bus_type" query and params will be added
+        if bus_type is not None and bus_type != 'Others': # if selected "bus_type" query and params will be added
             query += " AND bus_type = %s"
             params.append(bus_type)
         
@@ -110,7 +110,7 @@ class BusBookingApp: # Busly App
 
                 if bus_type == 'Others': # if selected "Others" (option) will visible
                     Other_type = st.selectbox("Select Other Bus Type", Other_types)
-                    if Other_type == '': # if not selected "Others" 
+                    if Other_type == '': # if other type is empty display all 
                         Other_type = None
                
                 else: # if not selected "Others"
