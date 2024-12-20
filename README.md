@@ -63,9 +63,3 @@ Busly is an innovative bus travel platform designed to simplify the process of f
 Detailed documentation, including feature descriptions, script functionality, and database setup, is available in the [Redbus Scraper PDF](https://github.com/madhan96p/Red_bus_final/blob/main/Redbus_Scraper.pdf).
 
 ---
-
-## 💡 **Getting Started**
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/madhan96p/Red_bus_final.git
-   cd Red_bus_final
