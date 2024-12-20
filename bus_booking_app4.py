@@ -175,6 +175,19 @@ class BusBookingApp: # Busly App
                 col1, col3 = st.columns([2, 5])
                 with col1: # Selecting "ID"
                     selected_id = st.selectbox("Select Bus ID to Book", available_ids, key="bus_id_select")
+                    selected_bus_df = filtered_df[filtered_df['ID'] == selected_id]
+                
+                    if not selected_bus_df.empty:# Check if seats are available                      
+                        selected_bus = selected_bus_df.iloc[0]
+                
+                        if selected_bus["Seats Available"] > 0: # If seats are available
+                            self.ldp_Bus_Details(selected_bus)
+                      
+                        else:
+                            pass
+                   
+                    else:
+                        pass
 
                 with col3: # Display booking details
                     st.subheader("Confirm Booking Details")
@@ -184,7 +197,7 @@ class BusBookingApp: # Busly App
                         selected_bus = selected_bus_df.iloc[0]
                 
                         if selected_bus["Seats Available"] > 0: # If seats are available
-                            self.dp_Bus_Details(selected_bus)
+                            self.rdp_Bus_Details(selected_bus)
 
                             if st.button("Confirm Booking"):# Confirm Booking
                                 self.book_bus(selected_id)
@@ -217,7 +230,7 @@ class BusBookingApp: # Busly App
         except Exception as e: # if buses already fulled
             st.error(f"An error occurred: {e}")
 
-    def dp_Bus_Details(self, selected_bus): # displaying selected bus
+    def rdp_Bus_Details(self, selected_bus): # displaying selected bus
         """Display the selected bus details."""
 
         details = { # To create table to USER confirmation by selected "ID"
@@ -227,12 +240,18 @@ class BusBookingApp: # Busly App
             "Bus_Type" : selected_bus["Bus Type"],
             "Departure Time": selected_bus["Departure Time"],
             "Arrival Time": selected_bus["Arrival Time"],
-            "Duration": selected_bus["Duration"],
-            "Fare (INR)": f"₹{selected_bus['Fare']}", 
             "Seats Available": selected_bus["Seats Available"]
         }
-       
         st.dataframe(pd.DataFrame(details.items(), columns=["Detail", "Value"]), hide_index=True)
+
+    def ldp_Bus_Details(self, selected_bus): # displaying selected bus
+
+        fare_Rating = { "Rating": selected_bus["Rating"], 
+                       "Fare (INR)": f"₹{selected_bus['Fare']}", 
+                       "Duration": selected_bus["Duration"]
+                       }
+        
+        st.dataframe(pd.DataFrame(fare_Rating.items(), columns=["Attribute", "Data Value"]), hide_index=True)
 
     def run(self): # Run bus_booking applications
         """Run the Streamlit app."""
@@ -256,7 +275,7 @@ class BusBookingApp: # Busly App
         self.fetch_filters(rating, fare, bus_type, Other_type, from_route, to_route)
        
         if not self.df.empty: # Check all filters are maching datas
-            st.title("Bus Booking System")
+            st.title("Busly Booking System")
             self.filter_bd_point()
             self.booking_data()
      
