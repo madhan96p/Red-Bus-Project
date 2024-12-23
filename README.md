@@ -25,7 +25,7 @@ Busly simplifies bus travel by combining web scraping, dynamic filtering, and an
 ## 🚀 **Highlights**  
 1. **Data Scraping**:  
    - Extracts bus route links and operator details.  
-   - Two scripts: `Red_bus_scraper.py` and `Key_for_scrape.py`.  
+   - Two scripts: `Redbus_project1_2.py` and `bus_data_automation.py`.  
    - Saves data as Excel/CSV with error handling.  
 
 2. **Database Management**:  
@@ -40,17 +40,17 @@ Busly simplifies bus travel by combining web scraping, dynamic filtering, and an
 ---
 
 ## 📖 **Steps to Use**  
-1. **Scrape Data**: Run `Red_bus_scraper.py` and `Key_for_scrape.py`.  
+1. **Scrape Data**: Run `Redbus_project1_2.py` and `bus_data_automation.py`.  
 2. **Insert Data**: Store in MySQL using `bus_data_to_sql3.py`.  
 3. **Run App**: Launch `bus_booking_app4.py` for filtering and booking.  
 
 ---
 
 ## 📂 **Key Files**  
-- `Red_bus_scraper.py`: Scrapes route and bus details.  
-- `Key_for_scrape.py`: Handles scraping workflows.  
-- `bus_data_to_sql3.py`: MySQL operations script.  
-- `bus_booking_app4.py`: Streamlit app for Busly platform.  
+- [`Redbus_project1_2.py`](https://github.com/madhan96p/Red_bus_final/blob/main/redbus_project1_2.py): Scrapes route and bus details.  
+- [`bus_data_automation.py`](https://github.com/madhan96p/Red_bus_final/blob/main/bus_data_automation.py): Handles scraping workflows.  
+- [`bus_data_to_sql3.py`](https://github.com/madhan96p/Red_bus_final/blob/main/bus_data_to_sql3.py): MySQL operations script.  
+- [`bus_booking_app4.py`](https://github.com/madhan96p/Red_bus_final/blob/main/bus_booking_app4.py): Streamlit app for Busly platform.  
 
 ---
 
