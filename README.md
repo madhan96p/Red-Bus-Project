@@ -1,65 +1,57 @@
-# Busly - Redbus Data Scraping and Dynamic Filtering
+# Busly - Redbus Data Scraping and Dynamic Filtering  
 
 **Busly**: Every Route. Every Stop. One App.  
-Busly is an innovative bus travel platform designed to simplify the process of finding, filtering, and booking bus services. It combines the power of web scraping, dynamic filtering, and a user-friendly interface to provide a seamless experience for users.
+Busly simplifies bus travel by combining web scraping, dynamic filtering, and an intuitive interface for seamless booking.  
 
 ---
 
-## 🌟 **Features**
-- Scrape bus routes and details from the Redbus website.
-- Store and manage data using SQL databases.
-- Dynamically display bus information with filters for routes, bus types, ratings, fares, and more.
-- Real-time booking system with live updates to seat availability.
+## 🌟 **Features**  
+- Scrape bus routes and details from Redbus.  
+- SQL database management for storing and querying data.  
+- Dynamic filters for routes, bus types, ratings, fares, and more.  
+- Real-time booking system with live seat availability.  
 
 ---
 
-## 🛠️ **Tech Stack**
-- **Python**
-- **Selenium**
-- **Pandas**
-- **SQL (PhpMyAdmin)**
-- **Streamlit**
+## 🛠️ **Tech Stack**  
+- Python  
+- Selenium  
+- Pandas  
+- SQL (PhpMyAdmin)  
+- Streamlit  
 
 ---
 
-## 🚀 **Key Highlights**
-### **Data Scraping**
-- Extracts bus route links and detailed information about bus operators, schedules, and pricing.
-- Two main scripts: `Red_bus_scraper.py` and `Key_for_scrape.py` for efficient and error-logged scraping.
-- Outputs saved in structured formats (Excel and CSV).
+## 🚀 **Highlights**  
+1. **Data Scraping**:  
+   - Extracts bus route links and operator details.  
+   - Two scripts: `Red_bus_scraper.py` and `Key_for_scrape.py`.  
+   - Saves data as Excel/CSV with error handling.  
 
-### **Database Management**
-- Uses MySQL for storing scraped data.
-- Avoids duplication with robust checks.
-- Ensures clean data insertion using `bus_data_to_sql3.py`.
+2. **Database Management**:  
+   - MySQL for clean and deduplicated data storage.  
+   - Managed via `bus_data_to_sql3.py`.  
 
-### **Streamlit Application**
-- **Filters**: Search by routes, timings, bus types, ratings, and more.
-- **Interactive Display**: Styled tables for easier data readability.
-- **Booking Flow**: Real-time seat booking with confirmations.
-- **User Interface**: Intuitive sidebar and main content display for smooth navigation.
+3. **Streamlit Application**:  
+   - Filters by routes, timings, ratings, fares, etc.  
+   - Interactive table display for easy navigation.  
+   - Real-time seat booking confirmation.  
 
 ---
 
-## 📖 **How It Works**
-1. **Scrape Data**:
-   - Run the scraping scripts to collect and save data.
-2. **Insert into SQL**:
-   - Use `bus_data_to_sql3.py` to store data in a MySQL database.
-3. **Launch the App**:
-   - Open the `bus_booking_app4.py` Streamlit app to filter, view, and book buses.
+## 📖 **Steps to Use**  
+1. **Scrape Data**: Run `Red_bus_scraper.py` and `Key_for_scrape.py`.  
+2. **Insert Data**: Store in MySQL using `bus_data_to_sql3.py`.  
+3. **Run App**: Launch `bus_booking_app4.py` for filtering and booking.  
 
 ---
 
-## 📂 **Files and Directories**
-- `Red_bus_scraper.py`: Script for scraping bus routes and details.
-- `Key_for_scrape.py`: Manages the flow for scraping route links and bus data.
-- `bus_data_to_sql3.py`: Handles MySQL database operations.
-- `bus_booking_app4.py`: Streamlit application for the Busly platform.
+## 📂 **Key Files**  
+- `Red_bus_scraper.py`: Scrapes route and bus details.  
+- `Key_for_scrape.py`: Handles scraping workflows.  
+- `bus_data_to_sql3.py`: MySQL operations script.  
+- `bus_booking_app4.py`: Streamlit app for Busly platform.  
 
 ---
 
-## 📄 **Documentation**
-Detailed documentation, including feature descriptions, script functionality, and database setup, is available in the [Redbus Scraper PDF](https://github.com/madhan96p/Red_bus_final/blob/main/Redbus_Scraper.pdf).
-
----
+**[Detailed Documentation Here](https://github.com/madhan96p/Red_bus_final/blob/main/Redbus_Scraper.pdf)**  
