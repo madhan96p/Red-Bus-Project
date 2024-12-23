@@ -1,6 +1,6 @@
 # Busly - Redbus Data Scraping and Dynamic Filtering  
 
-**Busly**: Every Route. Every Stop. One App.  
+## **Busly**: Every Route. Every Stop. One App.  
 Busly simplifies bus travel by combining web scraping, dynamic filtering, and an intuitive interface for seamless booking.  
 
 ---
