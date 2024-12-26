@@ -25,7 +25,6 @@ def links_scraper():
     scraper.scrape_all()
     scraper.save_results()
 
-    # Clean and save data
     try:
         df = pd.read_excel('Bus_Data.xlsx')
         cleaned_data = df.drop_duplicates()
