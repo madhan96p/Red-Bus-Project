@@ -1,11 +1,12 @@
-import pandas as pd #importing modules
+import pandas as pd  # Importing modules
 import os
-import subprocess
 from redbus_project import Bus_links_scraper, BusDetails, Data_base, BusBookingApp
+import logging
+import subprocess
 
-def links_scraper(): # Scrape bus route links
+def links_scraper():
     """
-    Scrape bus route links from the specified pages.
+    Scrape bus route links from the specified pages and save cleaned data.
     """
     links_to_scrape = [
         'https://www.redbus.in/online-booking/apsrtc/?utm_source=rtchometile',
@@ -24,72 +25,85 @@ def links_scraper(): # Scrape bus route links
     scraper.scrape_all()
     scraper.save_results()
 
-    df = pd.read_excel('Bus_Data.xlsx')
-    cleanedBD = df.drop_duplicates()
-    cleanedBD.to_excel('Bus_Data_Cleaned.xlsx', index=False)
-    print("Data cleaned and saved to Bus_Data_Cleaned.xlsx")
+    # Clean and save data
+    try:
+        df = pd.read_excel('Bus_Data.xlsx')
+        cleaned_data = df.drop_duplicates()
+        cleaned_data.to_excel('Bus_Data_Cleaned.xlsx', index=False)
+        print("Data cleaned and saved to Bus_Data_Cleaned.xlsx")
+    except Exception as e:
+        print(f"Error while cleaning or saving data: {e}")
 
-def route_data_scraper(): # Scrape route detail
+def route_data_scraper():
     """
     Scrape detailed route data from the collected route links.
     """
+    try:
+        xlsx_path = 'Bus_Data_Cleaned.xlsx'
+        scraped_links = pd.read_excel(xlsx_path)
+        route_links = scraped_links['route_link'].tolist()
 
-    xlsx_path = 'Bus_Data_Cleaned.xlsx'
-    scraped_links = pd.read_excel(xlsx_path)
-    route_links = scraped_links['route_link'].tolist()
-#     route_links = ['https://www.redbus.in/bus-tickets/dergaon-to-dibrugarh',
-#                    'https://www.redbus.in/bus-tickets/gohpur-to-guwahati'
-#                   ]
-   
-    scraper = BusDetails(route_links)
-    scraper.scrape_route_details()
-    scraper.save_results()
+        scraper = BusDetails(route_links)
+        scraper.scrape_route_details()
+        scraper.save_results()
+    except FileNotFoundError:
+        print(f"Error: File {xlsx_path} not found. Please run the links scraper first.")
+    except Exception as e:
+        print(f"Error while scraping route data: {e}")
 
-def insert_to_Sql(): # insert data into SQL
+def insert_to_sql():
+    """
+    Insert bus data from a CSV file into the SQL database.
+    """
     csv_file_path = 'Bus_Details.csv'
     
     if not os.path.exists(csv_file_path):
-        print(f"Error: File not found at {csv_file_path}")
+        print(f"Error: File not found at {csv_file_path}. Please scrape route data first.")
         return
 
-    db_handler = Data_base(csv_file_path)
-    db_handler.insert_data_from_csv(csv_file_path)
-    db_handler.close_connection()
- 
+    try:
+        db_handler = Data_base(csv_file_path)
+        db_handler.insert_data_from_csv(csv_file_path)
+        db_handler.close_connection()
+        print("Data successfully inserted into the SQL database.")
+    except Exception as e:
+        print(f"Error while inserting data into SQL: {e}")
+
 def run_streamlit():
     """
-    Initialize the app and launch Streamlit.
+    Run the Streamlit app using the proper Streamlit command.
     """
     try:
-        print("Initializing BusBookingApp...")
-        app = BusBookingApp()  # Ensure the app is instantiated correctly
-
-        # Example: Call any setup or preparatory methods
-        app()  # Replace with the actual method name, if it exists
-        
         print("Launching Streamlit app...")
         subprocess.run(["streamlit", "run", "redbus_project.py"], check=True)
     except Exception as e:
-        print(f"Error occurred while running Streamlit: {e}")
+        print(f"Error occurred while running Streamlit app: {e}")
 
-def main(): # To run any one of this 4 def 
+
+ 
+logging.getLogger("streamlit").setLevel(logging.ERROR)
+
+
+def main():
     """
     Provide the user with options to scrape links, route data, insert data into SQL, or run Streamlit.
     """
     options = {
         "1": links_scraper,
         "2": route_data_scraper,
-        "3": insert_to_Sql,
+        "3": insert_to_sql,
         "4": run_streamlit 
     }
 
-    print('1 - Scrape links\n2 - Scrape data\n3 - Insert data into SQL\n4 - Run Streamlit app')
+    print('1 - Scrape links\n2 - Scrape route data\n3 - Insert data into SQL\n4 - Run Streamlit app')
     choice = input("Enter your choice: ")
     
-    if choice in options: # To call function with selected option
-        options[choice]()
-  
-    else: # user chooise to chose code to run        
+    if choice in options:
+        try:
+            options[choice]()
+        except Exception as e:
+            print(f"An unexpected error occurred: {e}")
+    else:
         print("Invalid choice. Please enter a valid option (1, 2, 3, or 4).")
 
 if __name__ == "__main__":

@@ -680,3 +680,7 @@ class BusBookingApp: # Busly App
             
                 with col3: # MT column
                     pass  
+
+if __name__ == "__main__": # To run Busly Booking app
+    app = BusBookingApp()
+    app.run()
