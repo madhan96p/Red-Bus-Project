@@ -61,17 +61,14 @@ def run_streamlit():
     Initialize the app and launch Streamlit.
     """
     try:
-        # If app initialization is needed
         print("Initializing BusBookingApp...")
-        app = BusBookingApp()  # Ensure this initializes the app's required state
-        
-        # Ensure any setup or preparatory steps happen here
-        # app.run_setup()  # Replace 'run_setup' with the actual initialization method if needed
+        app = BusBookingApp()  # Ensure the app is instantiated correctly
 
+        # Example: Call any setup or preparatory methods
+        app()  # Replace with the actual method name, if it exists
+        
         print("Launching Streamlit app...")
         subprocess.run(["streamlit", "run", "redbus_project.py"], check=True)
-        # app.run() 
-
     except Exception as e:
         print(f"Error occurred while running Streamlit: {e}")
 
