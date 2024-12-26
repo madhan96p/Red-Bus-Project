@@ -1,6 +1,7 @@
 import pandas as pd #importing modules
+import os
 import subprocess
-from redbus_project1_2 import Bus_links_scraper, BusDetails, Data_base_handler, BusBookingApp
+from redbus_project import Bus_links_scraper, BusDetails, Data_base, BusBookingApp
 
 def links_scraper(): # Scrape bus route links
     """
@@ -44,24 +45,32 @@ def route_data_scraper(): # Scrape route detail
     scraper.scrape_route_details()
     scraper.save_results()
 
-def insert_to_Sql(): # insert datas into sql
-
+def insert_to_Sql(): # insert data into SQL
     csv_file_path = 'Bus_Details.csv'
-    db_handler = Data_base_handler(csv_file_path)
+    
+    if not os.path.exists(csv_file_path):
+        print(f"Error: File not found at {csv_file_path}")
+        return
+
+    db_handler = Data_base(csv_file_path)
     db_handler.insert_data_from_csv(csv_file_path)
     db_handler.close_connection()
  
-def run_streamlit(): # To Run Streamlit
+def run_streamlit():
     """
-    Run the Streamlit app.
+    Initialize the app and launch Streamlit.
     """
     try:
-        print("Running BusBookingApp...")
-        app = BusBookingApp() 
-        app.run()  
+        # If app initialization is needed
+        print("Initializing BusBookingApp...")
+        app = BusBookingApp()  # Ensure this initializes the app's required state
+        
+        # Ensure any setup or preparatory steps happen here
+        # app.run_setup()  # Replace 'run_setup' with the actual initialization method if needed
 
-        print("Running Streamlit app...")
-        subprocess.run(["streamlit", "run", "redbus_project.py"], check= True)
+        print("Launching Streamlit app...")
+        subprocess.run(["streamlit", "run", "redbus_project.py"], check=True)
+        # app.run() 
 
     except Exception as e:
         print(f"Error occurred while running Streamlit: {e}")
@@ -72,24 +81,19 @@ def main(): # To run any one of this 4 def
     """
     options = {
         "1": links_scraper,
-        "2": route_data_scraper
-        # "3": insert_to_Sql,
-        # "4": run_streamlit 
+        "2": route_data_scraper,
+        "3": insert_to_Sql,
+        "4": run_streamlit 
     }
 
-    print('1 - Scrape links\n2 - Scrape data') #\n3 - Insert data into SQL\n4 - Run Streamlit app')
+    print('1 - Scrape links\n2 - Scrape data\n3 - Insert data into SQL\n4 - Run Streamlit app')
     choice = input("Enter your choice: ")
     
     if choice in options: # To call function with selected option
         options[choice]()
   
-    else: # user chooise to chose code to run
-
-        ''' And in hear this (2 and 3) class is not working in .py file, So
-        am chaged some code after i splited code file... if needed view [bus_data_to_sql3.py and
-          bus_booking_app4.py] files''' 
-        
-        print("Invalid choice. Please enter a valid option (1, 2).") #, 3, or 4).")
+    else: # user chooise to chose code to run        
+        print("Invalid choice. Please enter a valid option (1, 2, 3, or 4).")
 
 if __name__ == "__main__":
     main()

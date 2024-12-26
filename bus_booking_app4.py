@@ -1,12 +1,12 @@
 import streamlit as st # importing modules
-import mysql.connector
+import pymysql
 import pandas as pd
 
 class BusBookingApp: # Busly App
  
     def __init__(self): # Database Connection
         try:
-            self.conn = mysql.connector.connect(
+            self.conn = pymysql.connect(
                 host='localhost',
                 user='root',
                 password='',
@@ -14,7 +14,7 @@ class BusBookingApp: # Busly App
             )
             self.cursor = self.conn.cursor()
             self.df = None
-        except mysql.connector.Error as err:
+        except pymysql.Error as err:
             st.error(f"Error: {err}")
 
     def hide_elements(self): # <`s hidding
@@ -258,7 +258,7 @@ class BusBookingApp: # Busly App
 
     def run(self): # Run bus_booking applications
         """Run the Streamlit app."""
-        self.hide_elements()
+        # s elf.hide_elements()
 
         col1, col2, col3 = st.columns([1, 2, 1])
 
